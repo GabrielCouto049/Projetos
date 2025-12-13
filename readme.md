@@ -14,7 +14,8 @@ Desenvolvedor web iniciante de **Camaquã – RS, Brasil**, apaixonado por criar
 
 ## 🔥 Projetos
 - **Projeto Android** —  Descubra a origem do nosso querido robozinho do Android.
-- Outros projetos serão lançados em breve.
+- **Projeto Cordel** — Leia "Cordel moderno", uma obra escrita por Milton Duarte.
+- Mais projetos serão lançados em breve :)
 
 ---
 
