@@ -22,6 +22,7 @@ div.iphone, iframe {
 div.iphone {
     width: 50%;
     max-width: 373.2px;
+    min-width: 311px;
     aspect-ratio: 311/627;
     background: transparent url(images/frame-iphone.png) no-repeat center center / contain fixed;
 }
