@@ -9,7 +9,7 @@
 body {
     background: rgb(165, 104, 42) url("images/fundo-madeira.jpg") no-repeat center center / cover fixed;
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
 }
 
 div.iphone, iframe {
