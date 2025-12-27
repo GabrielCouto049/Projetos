@@ -37,7 +37,7 @@ main {
 }
 
 .background {
-    height: 40%;
+    height: 50%;
     background: var(--color2) url(background.jpg) no-repeat center / cover fixed;
 }
 
@@ -85,7 +85,7 @@ input[type="submit"] {
     text-align: center;
     width: 100%;
     border: none;
-    padding: 5px;
+    padding: 10px;
     background-color: var(--color2);
     color: white;
     margin-bottom: 10px;
