@@ -23,7 +23,7 @@ main {
     background-color: white;
     text-align: center;
     width: clamp(300px, 90%, 400px);
-    height: 65%;
+    height: 70%;
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
@@ -42,7 +42,7 @@ main {
 }
 
 .main-content {
-    padding: 10px 30px;
+    padding: 15px 30px;
 }
 
 h1 {
