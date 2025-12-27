@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color1: #F2811D;
+    --color2: #F2921D;
+    --color3: #F2B279;
+    --color4: #F2C3A7;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, var(--color2), var(--color3));
+}
+
+main {
+    background-color: white;
+    text-align: center;
+    width: clamp(300px, 75%, 375px);
+    height: 65%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.background {
+    height: 40%;
+    background: var(--color2) url(background.jpg) no-repeat center / cover fixed;
+}
+
+.main-content {
+    padding: 15px 30px;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 1.1em;
+}
+
+.input-container {
+    margin-bottom: 15px;
+    background-color: var(--color2);
+    color: white;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.input-container input {
+    border: none;
+    outline: none;
+    font-size: 1em;
+    margin-left: 5px;
+    width: 100%;
+    border-radius: 5px;
+    padding: 2px 2px 2px 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input[type="submit"] {
+    display: block;
+    text-align: center;
+    width: 100%;
+    border: none;
+    padding: 5px;
+    background-color: var(--color2);
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--color1);
+    cursor: pointer;
+    transition: .3s;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color2);
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 720px) {
+    main {
+        flex-direction: row;
+        width: clamp(600px, 70%, 900px);
+        height: 50%;
+    }
+
+    .background {
+        width: 50%;
+        height: 100%;
+    }
+
+    .main-content {
+        width: 50%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    
+}
