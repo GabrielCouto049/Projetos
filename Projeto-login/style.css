@@ -22,7 +22,7 @@ body {
 main {
     background-color: white;
     text-align: center;
-    width: clamp(300px, 75%, 375px);
+    width: clamp(300px, 90%, 400px);
     height: 65%;
     border-radius: 20px;
     overflow: hidden;
