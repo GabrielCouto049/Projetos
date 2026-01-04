@@ -115,7 +115,7 @@ a:hover {
 @media screen and (min-width: 720px) {
     main {
         flex-direction: row;
-        width: clamp(600px, 70%, 900px);
+        width: clamp(720px, 70%, 900px);
         height: 50%;
     }
 
