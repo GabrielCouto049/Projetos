@@ -21,13 +21,24 @@ body {
   background-color: var(--main-background);
   color: var(--text-color);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  transition: all .5s;
+}
+
+body.escuro {
+  --main-background: hsl(0, 0%, 15%);
+  --text-color: hsl(0, 0%, 90%);
+  --inverted-text-color: hsl(0, 0%, 20%);
+  --highlight: hsl(14, 100%, 60%);
+  --inverted-highlight: hsl(14, 100%, 40%);
+  --card-background: #444444;
 }
 
 header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 3px;
+  padding: 5px;
 
   background-color: var(--highlight);
   position: sticky;
@@ -110,6 +121,7 @@ section {
 #social-media a {
   text-decoration: none;
   font-size: 1.5em;
+  color: var(--highlight);
 }
 
 #social-media a:hover {
@@ -186,7 +198,7 @@ iframe {
 #formations .institution {
   text-align: left;
   font-size: 1.1em;
-  color: black;
+  color: var(--inverted-highlight);
   font-weight: bold;
 }
 
@@ -235,6 +247,8 @@ iframe {
   padding: .2rem .5rem .4rem;
   display: inline-block;
 }
+
+
 
 
 
