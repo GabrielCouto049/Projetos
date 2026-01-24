@@ -6,8 +6,8 @@ Desenvolvedor web iniciante de **Camaquã – RS, Brasil**, apaixonado por criar
 
 ## 🚀 Sobre mim  
 - ⚡ **Interesses:** desenvolvimento web e mobile  
-- 🌱 **Atualmente aprendendo:** React, Node.js (Express) e PostgreSQL  
-- 🎯 **Pretendo aprender:** TypeScript, React Native, TailwindCSS e MongoDB  
+- 🌱 **Atualmente aprendendo:** Html, Css, JavaScript.
+- 🎯 **Pretendo aprender:** React, Node.js, PostgreSQL, TypeScript, React Native, TailwindCSS e MongoDB, entre outros. 
 - 📫 **Contato:** *gabrielcouto049@gmail.com*  
 
 ---
