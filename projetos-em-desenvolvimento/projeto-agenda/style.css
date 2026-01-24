@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+header {
+    background-color: hsl(200, 39%, 49%);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+ul, form {
+    width: 280px;
+    aspect-ratio: 1/1;
+    padding: 15px;
+    border: 1px solid hsl(0, 0%, 90%);
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+main form input[type="text"], main form input[type="number"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 3px;
+}
+
+main form button {
+    padding: 10px;
+    background-color: hsl(200, 39%, 49%);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+main ul {
+    border-bottom: 1px solid #ccc;
+    list-style-type: none;
+    overflow-y: auto;
+}
+
+main ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+main ul li:last-child {
+    border-bottom: none;
+}
+
+details summary {
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+details span {
+    font-size: .9em;
+}
+
+main ul li button {
+    aspect-ratio: 1/1;
+    background-color: hsl(0, 70%, 50%);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px 10px;
+}

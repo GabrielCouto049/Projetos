@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --card-background: white;
+  --text-color: hsl(0, 0%, 10%);
+  --color1: #d6d58e;
+  --color2: #dbf227;
+  --color3: #9fc131;
+  --color4: #005c53;
+  --color5: #042940;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to bottom, var(--color4), var(--color3));
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: clamp(200px, 75%, 800px);
+  background-color: var(--card-background);
+  border-radius: 16px;
+  overflow: hidden;
+
+  box-shadow: 0px 0px 4px hsl(0, 0%, 20%), 0px 0px 16px hsl(0, 0%, 40%);
+}
+
+section {
+  padding: 1rem;
+}
+
+#details {
+  background-image: linear-gradient(
+    to bottom,
+    var(--color3),
+    var(--card-background)
+  );
+  font-size: 0.9em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#details img {
+  margin: 0.5rem;
+}
+
+#details h1 {
+  color: var(--color4);
+  font-variant: small-caps;
+  margin-bottom: 0.5rem;
+}
+
+#details p {
+  color: var(--text-color);
+  line-height: 1.5em;
+}
+
+#formulary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#formulary label {
+  font-weight: 600;
+  line-height: 1.75em;
+}
+
+#formulary .input-container {
+  border: 1px solid var(--color4);
+  border-radius: 16px;
+  padding-right: 0.5rem;
+
+  overflow: hidden;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#formulary .input-container > input {
+  width: 100%;
+  padding: 0.75rem;
+
+  border: none;
+  outline: none;
+}
+
+#formulary form a {
+  display: block;
+  margin: 0.7rem 0;
+
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color4);
+  text-align: right;
+}
+
+#formulary form a:hover {
+  text-decoration: underline;
+}
+
+#formulary input[type="submit"] {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid var(--color2);
+  background-color: var(--color3);
+  padding: 0.5rem;
+}
+
+input[type="submit"]:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 3px 6px hsl(0, 0%, 90%);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+form + p {
+  text-align: center;
+  margin: 0.7rem 0;
+}
+
+.brands {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.brands a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: var(--color5);
+}
+
+.brands a:hover {
+  color: #9fc131;
+  transition: 0.2s;
+}
+
+@media screen and (min-width: 772px) {
+  main {
+    flex-direction: row;
+    height: 450px;
+  }
+
+  #details,
+  #formulary {
+    padding: 2rem;
+    flex: 1;
+  }
+}

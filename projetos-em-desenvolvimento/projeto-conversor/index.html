@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto conversor</title>
+</head>
+<body>
+   <header>
+    <h1>Projeto conversor</h1>
+   </header> 
+
+   <main>
+    <section class="formulary">
+        <label for="temperature">Temperatura:
+            <input type="number" id="temperature" name="temperature" placeholder="Digite a temperatura">
+        </label>
+            <label for="unit1">
+                De:
+                <select>
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </label>
+            <label for="unit2">
+                Para:
+                <select>
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </label>
+        <button id="convertBtn">Converter</button>
+        <div id="result"></div>
+    </section>
+    <script src="script.js"></script>
+   </main>
+</body>
+</html>

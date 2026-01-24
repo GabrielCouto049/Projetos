@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f942de152b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Projeto ATM</title>
+  </head>
+  <body>
+    <header>
+      <h1>ATM</h1>
+    </header>
+    <main>
+      <section id="formulary" class="active">
+        <label for="holder">
+          Titular:
+          <input type="text" id="holder" name="holder" />
+        </label>
+        <label for="password">
+          Senha:
+          <input type="password" id="password" name="password" />
+        </label>
+        <button id="login" class="primaryButton">Entrar</button>
+        <button id="goToNewAccount" class="secondaryButton">Criar Conta</button>
+      </section>
+      <section id="newAccount">
+        <label for="usrName">
+          Nome:
+          <input type="text" id="usrName" name="usrName" />
+        </label>
+        <label for="age">
+          Idade:
+          <input type="number" id="age" name="age" />
+        </label>
+        <label for="newPassword">
+          Senha:
+          <input type="password" id="newPassword" name="newPassword" />
+        </label>
+        <label for="repeatPassword">
+          Repetir Senha:
+          <input type="password" id="repeatPassword" name="repeatPassword" />
+        </label>
+        <button id="createAccount" class="primaryButton">
+          Criar Conta
+        </button>
+      </section>
+      <section id="action">
+        <button id="goToWithdraw" class="actionButton">Saque</button>
+        <button id="goToDeposit" class="actionButton">Depósito</button>
+        <button id="goToBalance" class="actionButton">Saldo</button>
+        <button id="goToTransfer" class="actionButton">Transferência</button>
+      </section>
+      <section id="withdraw">
+        <label for="amount">
+          Valor:
+          <input type="number" id="amount" name="amount" />
+        </label>
+        <button id="confirmWithdraw" class="primaryButton">
+          Confirmar Saque
+        </button>
+      </section>
+      <section class="successPage">
+        <i class="fa-solid fa-check"></i>
+        <p>Saque realizado com sucesso!</p>
+        <button class="primaryButton" onclick="goHome()">
+          Voltar à página inicial
+        </button>
+      </section>
+      <section id="deposit">
+        <label for="amountDeposit">
+          Valor:
+          <input type="number" id="amountDeposit" name="amountDeposit" />
+        </label>
+        <button id="confirmDeposit" class="primaryButton">
+          Confirmar Depósito
+        </button>
+      </section>
+      <section class="successPage">
+        <i class="fa-solid fa-check"></i>
+        <p>Depósito realizado com sucesso!</p>
+        <button class="primaryButton" onclick="goHome()">
+          Voltar à página inicial
+        </button>
+      </section>
+      <section id="balance">
+        <p id="balanceDisplay">0.00 R$</p>
+        <button class="primaryButton" onclick="goHome()">Voltar</button>
+      </section>
+      <section id="transfer">
+        <label for="recipient">
+          Destinatário:
+          <input type="text" id="recipient" name="recipient" />
+        </label>
+        <label for="amountTransfer">
+          Valor:
+          <input type="number" id="amountTransfer" name="amountTransfer" />
+        </label>
+        <button id="confirmTransfer" class="primaryButton">
+          Confirmar Transferência
+        </button>
+      </section>
+      <section class="successPage">
+        <i class="fa-solid fa-check"></i>
+        <p>Transferência realizada com sucesso!</p>
+        <button class="primaryButton" onclick="goHome()">
+          Voltar à página inicial
+        </button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

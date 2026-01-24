@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: hsl(300, 39%, 49%);
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+
+  width: 500px;
+  aspect-ratio: 1/1;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section:not(.active) {
+  display: none;
+}
+
+#action.active {
+  display: grid;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: bold;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.primaryButton {
+  background-color: hsl(300, 39%, 49%);
+  color: white;
+  border: none;
+}
+
+button.primaryButton:hover {
+  background-color: hsl(300, 39%, 39%);
+}
+
+button.secondaryButton {
+  color: #333;
+  border: 1px solid #999;
+}
+
+button.secondaryButton:hover {
+  background-color: #fff;
+}
+
+#action {
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+button.actionButton {
+  width: 200px;
+  aspect-ratio: 1/1;
+  font-size: 1.2rem;
+  padding: 20px;
+  border: none;
+  background-color: hsl(300, 39%, 49%);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button.actionButton:hover {
+  background-color: hsl(300, 39%, 39%);
+}
+
+#balance p {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.successPage {
+  text-align: center;
+  font-size: 1.2rem;
+  color: green;
+}
+
+.successPage i {
+  display: inline-block;
+  margin: 0 auto;
+  aspect-ratio: 1/1;
+  background-color: green;
+  color: white;
+  font-size: 3rem;
+  border-radius: 50%;
+}
+
+.successPage p {
+  margin: 20px 0;
+}

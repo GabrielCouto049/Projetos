@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --superLightRose: #F6EEE7;
+  --lightRose: #f6e8dd;
+  --darkRose: #f5dcd0;
+  --dark-brown: #e3ddd1;
+  --orange: #ff5a0c;
+  --accent-color: #FB421F;
+
+  --dark-gray: hsl(0, 0%, 20%);
+  --white: #fff;
+  --black: #000;
+}
+
+/* ==== Map ===== 
+
+selector {
+1 - grid properties
+2 - flex properties
+3 - spacing properties
+4 - color properties
+5 - sizing properties
+6 - border settings
+7 - shadow settings
+8 - display settings
+9 - font settings
+}
+
+*/
+
+body {
+  background-color: var(--white);
+  color: var(--dark-gray);
+  font-family: cera-round-pro, "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+
+  padding: 1rem;
+
+  background-color: var(--lightRose)
+}
+
+img {
+  display: inline-block;
+
+  background-color: var(--dark-brown);
+}
+
+#logo {
+  padding: 1rem;
+}
+
+section{
+  padding: 3rem 1.5rem;
+
+  text-align: center;
+}
+
+#banner {
+  background-image: linear-gradient(to bottom, var(--lightRose), var(--darkRose));
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+p {
+  margin: 1.75rem 0;
+
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+.highlighted-word {
+  color: var(--accent-color);
+}
+
+.cta-button {
+  display: inline-block;
+
+  padding: 1.2rem 2rem;
+  margin-bottom: 1rem;
+
+  background-color: hsl(0, 0%, 20%);
+  color: var(--white);
+
+  border-radius: 48px;
+
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#focus-mode, #plan-your-week, #reading-suggestions, #why-it-works, #login {
+  background-color: var(--superLightRose);
+}
+
+.content-image-portrait {
+  margin: 2.5rem 0;
+
+  width: clamp(100px, 100%, 800px);
+  aspect-ratio: 4 / 5;
+}
+
+#stay-aligned {
+  background-color: var(--white);
+}
+
+.commentary .suggestion {
+  margin: 1rem 0;
+  padding: 2rem;
+}
+
+.commentary img {
+  display: inline-block;
+
+  margin: 3rem 0 1rem;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+}
+
+.opinion {
+  margin-top: 0.75rem;
+
+  font-weight: 600;
+}
+
+.rating {
+  color: var(--orange);
+}
+
+#new-updates {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+#new-updates .cta-button {
+  background-color: var(--white);
+  color: var(--black);
+} 
+
+.content-image-landscape {
+  margin: 3rem 0;
+
+  width: clamp(100px, 100%, 800px);
+  aspect-ratio: 3 / 2;
+}
+
+#why-it-works ul {
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+
+  list-style-position: inside;
+}
+
+#why-it-works ul li {
+  line-height: 2em;
+
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+#recommendations {
+  background-color: var(--white);
+
+  .table-container {
+    width: 100%;
+    height: fit-content;
+
+    overflow: auto;
+  }
+
+  table {
+    margin: 2rem auto;
+
+    font-size: 1.1em;
+  }
+
+  th,
+  td {
+    padding: 1rem;
+  }
+
+  thead {
+    background-color: var(--dark-brown);
+  }
+
+  thead th {
+    font-size: 1.3em;
+  }
+
+  tbody th {
+    color: var(--accent-color);
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: var(--superLightRose);
+  }
+}
+
+#login {
+  form {
+    margin: 2rem 0;
+
+    font-size: 1.1em;
+  }
+
+  form label:not(label[for="terms"]) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.25rem;
+
+    margin: 1rem 0;
+  }
+
+  form label[for="terms"] {
+    display: flex;
+    justify-content: center;
+    gap: 0.8ch;
+
+    margin: 1rem 0;
+  }
+
+  form label[for="terms"] > a {
+    color: #000000;
+  }
+
+  form input[type="text"],
+  form input[type="email"] {
+    width: 100%;
+
+    padding: 0.75rem;
+
+    background-color: var(--white);
+
+    border: none;
+    border-radius: 8px;
+  }
+
+  form input[type="checkbox"] {
+    width: 14px;
+  }
+
+  form .submit-button {
+    width: 100%;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  padding: 2rem 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  color: var(--dark-gray);
+  font-size: 1.5em;
+}

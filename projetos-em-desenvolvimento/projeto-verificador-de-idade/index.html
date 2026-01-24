@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Verificador de idade</title>
+  </head>
+  <body>
+    <header>
+      <h1>Verificador de idade</h1>
+    </header>
+    <main>
+        <label for="anoDeNascimento"
+          >Ano de nascimento:
+          <input
+            type="number"
+            id="anoDeNascimento"
+            min="1900"
+            required
+          />
+        </label>
+        <fieldset>
+          <legend>Sexo</legend>
+          <label for="mas">
+            <input type="radio" name="gender" id="mas" value="M" checked/>
+            Masculino
+          </label>
+          <label for="fem">
+            <input type="radio" name="gender" id="fem" value="F" />
+            Feminino
+          </label>
+        </fieldset>
+        <button id="send">Enviar</button>
+      <p id="output">Preencha os dados acima para ver o resultado</p>
+      <img src="#" alt="Picture" class="main-image" />
+    </main>
+    <footer>
+      <p>
+        Me siga no meu
+        <a href="https://www.gabrielcouto049.github.io" rel="nofollow"
+          >Github</a>
+      </p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

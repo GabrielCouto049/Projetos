@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+#taskInput:focus {
+    outline: 1px solid #4CAF50;
+}
+
+#addTaskButton {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+#addTaskButton:hover {
+    background-color: #45a049;
+    color: white;
+    transition: all .3s ease;
+}
+
+#output {
+    list-style-type: none;
+    margin-top: 20px;
+    background-color: #fff;
+    min-height: 300px;
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+
+}
+
+#output li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#output li span {
+    flex: 1;
+}
+
+#output li:last-child {
+    border-bottom: none;
+}
+
+#output li:hover {
+    background-color: #f1f1f1;
+}
+
+#output li.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+#output li.completed:hover {
+    background-color: #f1f1f1;
+}
+
+#output li input[type="checkbox"] {
+    margin-right: 10px;
+
+}
+
+#output li button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
