@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --main-color: hsl(208, 100%, 40%);
+  --inverted-color: hsl(42, 96%, 50%);
+}
+
+body {
+  height: 100vh;
+  padding: 0.5rem;
+  background-color: #f5f5f5;
+}
+
+header {
+  margin: 1.1rem 0 0.7rem;
+
+  h1 {
+    color: var(--main-color);
+  }
+}
+
+#form #input-container {
+  display: flex;
+  padding: 0.25rem;
+  background-color: white;
+
+  border: 2px solid var(--main-color);
+  border-radius: 24px;
+  overflow: hidden;
+
+  input {
+    flex: 1;
+    padding-left: 0.5rem;
+    border: none;
+    outline: none;
+  }
+
+  button {
+    padding: 0.4rem;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.15s;
+  }
+
+  button:hover {
+    background-color: var(--inverted-color);
+  }
+}
+
+#results {
+  display: none;
+  width: clamp(200px, 100%, 500px);
+  padding: 2rem;
+  margin: 2rem auto 0;
+  background-color: white;
+  box-shadow: 0px 0px 20px hsla(0, 0%, 0%, 0.1);
+  border-radius: 16px;
+
+  h2 {
+    margin-bottom: 0.5rem;
+    color: var(--main-color);
+    text-transform: capitalize;
+  }
+
+  p {
+    font-size: 0.85em;
+    color: hsl(0, 0%, 25%);
+  }
+
+  #main-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem 0;
+
+    span {
+      font-size: 4em;
+      font-weight: 600;
+    }
+
+    sup {
+      font-size: 2em;
+      font-weight: 600;
+      position: relative;
+      bottom: 13px;
+    }
+
+    sup:hover {
+      color: var(--inverted-color);
+      cursor: pointer;
+    }
+
+    i {
+      font-size: 3.5em;
+      color: var(--main-color);
+      transition: .15s;
+    }
+
+    i:hover {
+        color: var(--inverted-color);
+    }
+
+    i.hidden {
+      display: none;
+    }
+  }
+}
+
+#additional-data {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  gap: 0.5rem 0;
+}
+
+@media screen and (min-width: 480px) {
+  #results {
+    padding: 5rem;
+  }
+
+  h2,
+  p {
+    text-align: center;
+  }
+
+  #additional-data {
+    display: flex;
+    justify-content: space-between;
+  }
+}

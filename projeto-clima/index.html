@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>WeatherSphere</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f942de152b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        <i class="fa-solid fa-cloud-sun" aria-hidden="true"></i>
+        WeatherSphere
+      </h1>
+    </header>
+
+    <main>
+      <!-- Search Section -->
+      <section id="form">
+        <div id="input-container">
+          <input
+            type="text"
+            id="city-input"
+            placeholder="Enter city name..."
+            aria-label="City name"
+          />
+          <button id="search-button" aria-label="Search city">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          </button>
+        </div>
+      </section>
+
+      <!-- Weather Results -->
+      <section id="results">
+        <h2 id="city-name">New York</h2>
+
+        <p>
+          <span id="weekday">Wednesday</span>,
+          <span id="month">October</span>
+          <span id="day">1</span>
+        </p>
+
+        <div id="main-data">
+          <div>
+            <span class="degrees">30</span>
+            <sup class="unity">°C</sup>
+          </div>
+
+          <!-- Weather Icons -->
+          <i class="fa-solid fa-sun weather-icon" title="Sunny"></i>
+          <i class="fa-solid fa-cloud-sun weather-icon hidden" title="cloudy"></i>
+          <i class="fa-solid fa-cloud-rain weather-icon hidden" title="rainy"></i>
+          <i class="fa-solid fa-cloud-bolt weather-icon hidden" title="thunderstorm"></i>
+          <i class="fa-solid fa-cloud weather-icon hidden" title="Mist"></i>
+          <!-- <div style="background-color: aqua;" class="weather-icon">Haze</div> -->
+        </div>
+
+        <div id="additional-data">
+          <span>
+            <i class="fa-solid fa-wind" aria-hidden="true"></i>
+            <span id="wind-speed">3</span>
+            <span id="wind-speed-unity">km/h</span>
+          </span>
+
+          <span>
+            <i class="fa-solid fa-temperature-low" aria-hidden="true"></i>
+            <span class="degrees">280</span>
+            <span class="unity">°C</span>
+          </span>
+
+          <span>
+            <i class="fa-solid fa-droplet" aria-hidden="true"></i>
+            <span id="humidity">53</span> %
+          </span>
+
+          <span>
+            <i class="fa-solid fa-eye" aria-hidden="true"></i>
+            <span id="visibility">5</span> km
+          </span>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

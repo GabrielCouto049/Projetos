@@ -110,7 +110,11 @@
       }
 
       function calcular() {
-        screen.textContent = eval(screen.textContent);
+        try {
+          screen.textContent = eval(screen.textContent);
+        } catch (error) {
+          screen.textContent = "Error";
+        }
       }
 
       function clearScreen() {
