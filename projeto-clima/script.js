@@ -18,7 +18,7 @@ const dayContainer = document.getElementById("day");
 // ================= ESTADO =================
 let kelvinTemp = 0;
 let currentUnit = "celsius";
-const API_KEY = "MY API KEY 😅";
+const API_KEY = "*************************";
 
 // ================= EVENTOS =================
 unitElements[0].addEventListener("click", toggleUnit);
@@ -80,6 +80,7 @@ function updateDate() {
   dayContainer.textContent = day;
 }
 
+updateDate();
 setInterval(updateDate, 60000);
 
 // --------- ALTERAR UNIDADE ---------
@@ -105,7 +106,7 @@ function updateUnitSymbol(symbol) {
 // --------- BUSCAR CIDADE ---------
 async function findCity(cityName) {
   try {
-    const { lat, lon, name } = await getCityCoordinates(cityName);
+    const {lat, lon, name} = await getCityCoordinates(cityName);
 
     cityNameContainer.textContent = name;
 
@@ -119,7 +120,7 @@ async function findCity(cityName) {
 
 async function getCityCoordinates(cityName) {
   const response = await fetch(
-    `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`
+    `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${API_KEY}`,
   );
 
   if (!response.ok) throw new Error("City not found");
@@ -133,7 +134,7 @@ async function getCityCoordinates(cityName) {
 
 async function getWeatherData(lat, lon) {
   const response = await fetch(
-    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`
+    `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`,
   );
 
   if (!response.ok) throw new Error("Weather data not found");
@@ -185,10 +186,12 @@ function changeIcon(status) {
     Rain: 2,
     Thunderstorm: 3,
     Mist: 4,
-    Haze: 5,
+    Snow: 5,
   };
 
   if (statusMap[status] !== undefined) {
     weatherIcons[statusMap[status]].classList.remove("hidden");
+  } else {
+    weatherIcons[6].classList.remove("hidden");
   }
 }
