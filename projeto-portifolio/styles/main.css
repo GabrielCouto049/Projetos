@@ -13,7 +13,8 @@
   --highlight: hsl(212, 100%, 50%);
   --inverted-highlight: hsl(212, 100%, 70%);
   --card-background: white;
-  --shadow: 0px 1px 2px hsl(0, 0%, 60%), 0px 5px 10px hsl(0, 0%, 80%);
+  --shadow: 0px 1px 2px hsla(0, 0%, 0%, 0.25), 0px 5px 10px hsla(0, 0%, 0%, 0.1);
+  --light: inset 0px 1px 2px hsla(0, 0%, 100%, 0.25), inset 0px 5px 10px hsla(0, 0%, 100%, 0.1);
 
   --paragraph-font: normal 0.9rem / 1.7rem arial;
 }
@@ -53,40 +54,40 @@ nav {
   display: flex;
   align-items: center;
   gap: 5px;
-}
 
-nav > a {
-  color: var(--inverted-text-color);
-  padding: 7.5px;
-  border-radius: 50%;
-  transition: 0.3s;
-}
+  a {
+    color: var(--inverted-text-color);
+    padding: 7.5px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
 
-nav a:hover {
-  color: var(--text-color);
-  background-color: var(--main-background);
+  a:hover {
+    color: var(--text-color);
+    background-color: var(--main-background);
+  }
 }
 
 main {
   display: grid;
   grid-template-columns: auto 90% auto;
-}
 
-main h1 {
-  color: var(--highlight);
-  font-size: 1.8em;
-  font-variant: small-caps;
-  margin-bottom: 1rem;
-}
+  h1 {
+    color: var(--highlight);
+    font-size: 1.8em;
+    font-variant: small-caps;
+    margin-bottom: 1rem;
+  }
 
-main h1 span {
-  font-size: 0.9em;
-}
+  h1 span {
+    font-size: 0.9em;
+  }
 
-main p {
-  font: var(--paragraph-font);
-  text-align: justify;
-  line-height: 2.1em;
+  p {
+    font: var(--paragraph-font);
+    text-align: justify;
+    line-height: 2.1em;
+  }
 }
 
 section {
@@ -134,7 +135,7 @@ section {
 #presentation p {
   line-height: 2.1em;
   text-indent: 1.25em;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 #skill-container {
@@ -187,7 +188,7 @@ section {
     text-align: left;
     font-size: 1.2em;
     line-height: 1.5em;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
     color: var(--inverted-highlight);
     font-weight: bold;
   }
@@ -206,21 +207,21 @@ section {
 .project-card {
   border: 1px solid hsl(0, 0%, 60%);
   border-radius: 12px;
-  box-shadow: var(--shadow);
+  box-shadow: var(--light), var(--shadow);
   overflow: hidden;
   margin-bottom: 2rem;
   transition: 0.3s;
+
+  .showcase {
+    width: 100%;
+  }
 }
 
 .project-card:hover {
-  transform: scale(1.01);
+  transform: scale(1.03);
   box-shadow:
-    0px 0px 12px hsl(0, 0%, 80%),
-    0px 0px 24px hsl(0, 0%, 90%);
-}
-
-.project-card .showcase {
-  width: 100%;
+    0px 0px 12px hsla(0, 0%, 0%, 0.25),
+    0px 0px 24px hsla(0, 0%, 0%, 0.1);
 }
 
 .card-text {

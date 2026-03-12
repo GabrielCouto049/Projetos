@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Projeto Pokédex</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media-query.css">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+  <script src="https://kit.fontawesome.com/f942de152b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <button id="menu-icon" aria-label="Abrir menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Pokémons</a>
+      <a href="#">Treinadores</a>
+      <a href="#">Sobre</a>
+    </nav>
+
+    <img src="images/logo.png" alt="Logo Pokédex" id="logo">
+
+    <a href="login.html" id="login-icon" aria-label="Login">
+      <i class="fa-solid fa-circle-user"></i>
+    </a>
+
+  </header>
+
+
+  <!-- MAIN -->
+
+  <main>
+
+    <h1>Pokédex</h1>
+
+
+    <!-- SEARCH -->
+
+    <section id="search-bar-container">
+
+      <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+
+      <input
+        type="text"
+        id="search-bar"
+        placeholder="Pesquisar pokémon..."
+      >
+
+      <button id="search-button">
+        Pesquisar
+      </button>
+
+    </section>
+
+    <div id="suggestions"></div>
+
+    <!-- MAIN CONTENT -->
+
+    <section id="main-content">
+
+
+      <!-- OPTIONS -->
+
+      <section id="options">
+
+        <select id="sort-select">
+
+          <option value="sort-by-number">
+            Ordenar por Número
+          </option>
+
+          <option value="sort-by-name">
+            Ordenar por Nome
+          </option>
+
+          <option value="sort-by-type">
+            Ordenar por Tipo
+          </option>
+
+        </select>
+
+        <i class="fa-solid fa-filter" id="filter-icon"></i>
+
+      </section>
+
+
+      <!-- FILTERS -->
+
+      <form id="filters">
+
+
+        <!-- SELECT FILTERS -->
+
+        <div id="selects">
+
+          <select id="types">
+            <option disabled selected>Tipo</option>
+            <option value="grass">Planta</option>
+            <option value="fire">Fogo</option>
+            <option value="water">Água</option>
+            <option value="electric">Elétrico</option>
+            <option value="psychic">Psíquico</option>
+            <option value="ice">Gelo</option>
+            <option value="dragon">Dragão</option>
+            <option value="dark">Noturno</option>
+            <option value="fairy">Fada</option>
+            <option value="normal">Normal</option>
+            <option value="fighting">Lutador</option>
+            <option value="flying">Voador</option>
+            <option value="poison">Veneno</option>
+            <option value="ground">Terrestre</option>
+            <option value="bug">Inseto</option>
+          </select>
+
+          <select id="weakness">
+            <option disabled selected>Fraqueza</option>
+          </select>
+
+          <select id="abilities">
+            <option disabled selected>Habilidade</option>
+          </select>
+
+        </div>
+
+        <!-- GENERATION -->
+
+        <fieldset id="generation-filters">
+
+          <legend>Geração</legend>
+
+          <label>
+            <input type="radio" name="generation" value="1">
+            Geração 1
+          </label>
+
+          <label>
+            <input type="radio" name="generation" value="2">
+            Geração 2
+          </label>
+
+          <label>
+            <input type="radio" name="generation" value="3">
+            Geração 3
+          </label>
+
+          <label>
+            <input type="radio" name="generation" value="4">
+            Geração 4
+          </label>
+
+          <label>
+            <input type="radio" name="generation" value="5">
+            Geração 5
+          </label>
+
+          <label>
+            <input type="radio" name="generation" value="6">
+            Geração 6
+          </label>
+
+          <label>
+            <input type="radio" name="generation" value="7">
+            Geração 7
+          </label>
+
+          <label>
+            <input type="radio" name="generation" value="8">
+            Geração 8
+          </label>
+
+        </fieldset>
+
+        <!-- HEIGHT -->
+
+        <fieldset id="height-filters">
+
+          <legend>Altura</legend>
+
+          <label>
+            <input type="radio" name="height" value="small">
+            Pequeno
+          </label>
+
+          <label>
+            <input type="radio" name="height" value="medium">
+            Médio
+          </label>
+
+          <label>
+            <input type="radio" name="height" value="large">
+            Grande
+          </label>
+
+        </fieldset>
+
+
+        <!-- WEIGHT -->
+
+        <fieldset id="weight-filters">
+
+          <legend>Peso</legend>
+
+          <label>
+            <input type="radio" name="weight" value="light">
+            Leve
+          </label>
+
+          <label>
+            <input type="radio" name="weight" value="medium">
+            Médio
+          </label>
+
+          <label>
+            <input type="radio" name="weight" value="heavy">
+            Pesado
+          </label>
+
+        </fieldset>
+
+
+        <input type="submit" value="Aplicar filtros">
+
+      </form>
+
+      <!-- POKEMON GRID -->
+
+      <section id="pokemons-images">
+
+        <!-- cards gerados por JS -->
+
+      </section>
+
+    </section>
+
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
