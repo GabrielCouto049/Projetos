@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -106,7 +106,7 @@
         <div id="selects">
 
           <select id="types">
-            <option disabled selected>Tipo</option>
+            <option disabled selected value="all">Tipo</option>
             <option value="grass">Planta</option>
             <option value="fire">Fogo</option>
             <option value="water">Água</option>
@@ -230,14 +230,14 @@
         </fieldset>
 
 
-        <input type="submit" value="Aplicar filtros">
+        <input id="submit-button" type="submit" value="Aplicar filtros">
 
       </form>
 
       <!-- POKEMON GRID -->
 
       <section id="pokemons-images">
-
+        <p>Carregando...</p>
         <!-- cards gerados por JS -->
 
       </section>

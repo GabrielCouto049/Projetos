@@ -40,7 +40,7 @@
 ========================= */
 
 body {
-  height: 200vh;
+  height: 100vh;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
@@ -142,6 +142,7 @@ main h1 {
 #search-bar-container {
   position: sticky;
   top: 1rem;
+  z-index: 50;
 
   display: flex;
   align-items: center;
@@ -192,7 +193,7 @@ main h1 {
   margin-bottom: .5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-
+  cursor: pointer;
 }
 
 #suggestions > div {
@@ -201,6 +202,10 @@ main h1 {
   &:not(:last-child){
     border-bottom: 1px solid gainsboro;
   }
+}
+
+#suggestions > div:hover{
+  color: var(--primary-color);
 }
 
 /* =========================

@@ -3,10 +3,11 @@ const searchBar = document.getElementById("search-bar");
 const sortSelect = document.getElementById("sort-select");
 const pokemonGrid = document.getElementById("pokemons-images");
 const suggestions = document.getElementById("suggestions");
-const filterButton = document.getElementById('filter-icon')
+const filterIcon = document.getElementById('filter-icon')
 const filterScreen = document.getElementById('filters');
 const menuButton = document.getElementById('menu-icon');
-const menu = document.getElementsByTagName('nav')[0]
+const menu = document.getElementsByTagName('nav')[0];
+const filterButton = document.getElementById('submit-button');
 
 // =========== MENU TOGGLE ======================//
 
@@ -16,7 +17,7 @@ menuButton.addEventListener('click', (e) => {
 
 //=========== FILTER INTERFACE TOGGLE ========= //
 
-filterButton.addEventListener('click', (e) => {
+filterIcon.addEventListener('click', (e) => {
   filterScreen.classList.toggle('show');
 })
 
@@ -37,7 +38,9 @@ async function loadPokemonList() {
           name: details.name,
           id: details.id,
           types: details.types.map((t) => t.type.name),
-          image: details.sprites.front_default
+          image: details.sprites.front_default,
+          height: details.height,
+          weight: details.weight
         };
       })
     );
@@ -101,6 +104,58 @@ function showSuggestions(list){
   });
 
 }
+
+// ============= FILTER =========== //
+
+filterButton.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  const typeFilter = document.getElementById('types').value;
+  const weaknessFilter = document.getElementById('weakness').value;
+  const abilityFilter = document.getElementById('abilities').value;
+  const generationFilter = document.querySelector('input[name="generation"]:checked')?.value;
+  const heightFilter = document.querySelector('input[name="height"]:checked')?.value;
+  const weightFilter = document.querySelector('input[name="weight"]:checked')?.value;
+
+  let filtered = [...allPokemons];
+
+  // FILTER BY TYPE
+  if (typeFilter !== "all") {
+    filtered = filtered.filter(pokemon =>
+      pokemon.types.includes(typeFilter)
+    );
+  }
+
+  // FILTER BY HEIGHT
+  if (heightFilter === "small") {
+    filtered = filtered.filter(pokemon => pokemon.height < 10);
+  }
+
+  if (heightFilter === "medium") {
+    filtered = filtered.filter(pokemon => pokemon.height >= 10 && pokemon.height < 20);
+  }
+
+  if (heightFilter === "large") {
+    filtered = filtered.filter(pokemon => pokemon.height >= 20);
+  }
+
+  // FILTER BY WEIGHT
+  if (weightFilter === "light") {
+    filtered = filtered.filter(pokemon => pokemon.weight < 100);
+  }
+
+  if (weightFilter === "medium") {
+    filtered = filtered.filter(pokemon => pokemon.weight >= 100 && pokemon.weight < 300);
+  }
+
+  if (weightFilter === "heavy") {
+    filtered = filtered.filter(pokemon => pokemon.weight >= 300);
+  }
+
+  displayPokemon(filtered.slice(0, 20));
+
+  filterScreen.classList.remove('show');
+});
 
 // ============= GRID =========== //
 function loadPokemonGrid(){
