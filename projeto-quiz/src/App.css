@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bgColor);
+}
+
+header {
+    background-color: var(--darkGray);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

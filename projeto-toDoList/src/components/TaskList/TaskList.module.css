@@ -1,0 +1,33 @@
+/* CONTAINER */
+.taskList {
+  background: #1e1e2f;
+  border-radius: 12px;
+  padding: 1rem;
+  height: 100%;
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  overflow-y: auto;
+}
+
+/* SCROLLBAR */
+.taskList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.taskList::-webkit-scrollbar-thumb {
+  background: #3a3af0;
+  border-radius: 10px;
+}
+
+.taskList::-webkit-scrollbar-thumb:hover {
+  background: #2a2ad1;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .taskList {
+    padding: 15px;
+    margin-top: 20px;
+  }
+}

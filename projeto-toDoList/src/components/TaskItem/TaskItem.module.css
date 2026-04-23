@@ -1,0 +1,144 @@
+/* CONTAINER */
+.taskItem {
+  background: linear-gradient(145deg, #1e1e2f, #25253a);
+  color: #fff;
+  border-radius: 14px;
+  padding: 16px;
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+
+  opacity: 0;
+  animation: fadeIn 0.4s forwards;
+
+  position: relative;
+}
+
+.taskItem:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* ESTRUTURA */
+.taskHeader {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.taskActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* ELEMENTOS */
+.taskTitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.taskPriority {
+  font-size: 0.75rem;
+  padding: .5rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.taskDescription {
+  font-size: 0.95rem;
+  color: #cfcfe0;
+  line-height: 1.4;
+}
+
+.taskItem input[type="checkbox"] {
+  appearance: none;
+  background-color: #2a2a3a;
+  height: 90%;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.taskItem input[type="checkbox"]:checked {
+  background-color: #52c41a;
+}
+
+.taskItem input[type="checkbox"]:checked::after {
+  content: '✓';
+  color: white;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.taskActions button {
+  padding: .5rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+/* BOTÕES (sem sobrescrever global) */
+.taskActions button:not(.deleteButton) {
+  background: #3a3af0;
+  color: white;
+}
+
+.taskActions button:not(.deleteButton):hover {
+  background: #2a2ad1;
+}
+
+.taskActions .deleteButton {
+  color: hsl(0, 0%, 20%);
+  background: #ff4d4f;
+}
+
+.taskActions .deleteButton:hover {
+  background: #d9363e;
+}
+
+/* DETALHES */
+.taskDetails {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+/* ESTADOS */
+.open {
+  max-height: 200px;
+  opacity: 1;
+  transform: translateY(0);
+  margin: 1rem 0;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.high { background-color: #ff4d4f; }
+.medium { background-color: #faad14; }
+.low { background-color: #52c41a; }
+
+/* INTERAÇÕES */
+.taskItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}

@@ -1,0 +1,36 @@
+.questionCard {
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: var(--cardShadow);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    width: clamp(300px, 50%, 600px);
+}
+
+.questionCard > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.options {
+    background-color: var(--lightGray);
+    border: 1px solid #ccc;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.options:hover {
+    background-color: var(--mediumGray);
+}
+
+.correct {
+    background-color: var(--correctGreen);
+}
+
+.wrong {
+    background-color: var(--incorrectRed);
+}

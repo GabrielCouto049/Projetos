@@ -1,0 +1,16 @@
+.infoCard {
+    display: flex;
+    justify-content: space-between;;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 0;
+    width: clamp(300px, 50%, 600px);
+    box-shadow: var(--cardShadow);
+}
+
+.points, .progress {
+    font-weight: bold;
+    color: var(--primary-color);
+}

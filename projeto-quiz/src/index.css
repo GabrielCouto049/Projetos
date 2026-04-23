@@ -1,0 +1,11 @@
+:root {
+    --primary-color:   hsl(195, 100%, 50%);
+    --secondary-color: hsl(195, 100%, 60%);
+    --darkGray:        hsl(0, 0%, 20%);
+    --mediumGray:      hsl(0, 0%, 70%);
+    --lightGray:       hsl(0, 0%, 97%);
+    --bgColor:         hsl(0, 0%, 94%);
+    --correctGreen:    hsl(120, 100%, 40%);
+    --incorrectRed:    hsl(0, 100%, 50%);
+    --cardShadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

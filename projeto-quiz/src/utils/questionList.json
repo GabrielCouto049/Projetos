@@ -1,0 +1,267 @@
+[
+  {
+    "id": 0,
+    "title": "Qual é a capital da Itália?",
+    "options": ["Roma", "Milão", "Veneza", "Florença"],
+    "correctAnswer": "Roma"
+  },
+  {
+    "id": 1,
+    "title": "Qual é o maior oceano do mundo?",
+    "options": ["Atlântico", "Índico", "Ártico", "Pacífico"],
+    "correctAnswer": "Pacífico"
+  },
+  {
+    "id": 2,
+    "title": "Qual planeta é conhecido como planeta vermelho?",
+    "options": ["Vênus", "Marte", "Mercúrio", "Júpiter"],
+    "correctAnswer": "Marte"
+  },
+  {
+    "id": 3,
+    "title": "Quantos continentes existem na Terra?",
+    "options": ["5", "6", "7", "8"],
+    "correctAnswer": "7"
+  },
+  {
+    "id": 4,
+    "title": "Qual é o símbolo químico do ouro?",
+    "options": ["Au", "Ag", "O", "Go"],
+    "correctAnswer": "Au"
+  },
+  {
+    "id": 5,
+    "title": "Quem escreveu 'Romeu e Julieta'?",
+    "options": [
+      "William Shakespeare",
+      "Charles Dickens",
+      "Machado de Assis",
+      "Victor Hugo"
+    ],
+    "correctAnswer": "William Shakespeare"
+  },
+  {
+    "id": 6,
+    "title": "Qual é o maior animal terrestre?",
+    "options": ["Elefante africano", "Girafa", "Rinoceronte", "Hipopótamo"],
+    "correctAnswer": "Elefante africano"
+  },
+  {
+    "id": 7,
+    "title": "Qual é a capital do Japão?",
+    "options": ["Pequim", "Seul", "Tóquio", "Bangkok"],
+    "correctAnswer": "Tóquio"
+  },
+  {
+    "id": 8,
+    "title": "Em que ano o homem chegou à Lua pela primeira vez?",
+    "options": ["1965", "1969", "1972", "1959"],
+    "correctAnswer": "1969"
+  },
+  {
+    "id": 9,
+    "title": "Qual é o gás mais abundante na atmosfera terrestre?",
+    "options": ["Oxigênio", "Nitrogênio", "Dióxido de carbono", "Hélio"],
+    "correctAnswer": "Nitrogênio"
+  },
+  {
+    "id": 10,
+    "title": "Qual é a capital da Espanha?",
+    "options": ["Madri", "Barcelona", "Sevilha", "Valência"],
+    "correctAnswer": "Madri"
+  },
+  {
+    "id": 11,
+    "title": "Qual é o menor país do mundo?",
+    "options": ["Mônaco", "Vaticano", "San Marino", "Liechtenstein"],
+    "correctAnswer": "Vaticano"
+  },
+  {
+    "id": 12,
+    "title": "Quem pintou a obra 'A Última Ceia'?",
+    "options": [
+      "Leonardo da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Donatello"
+    ],
+    "correctAnswer": "Leonardo da Vinci"
+  },
+  {
+    "id": 13,
+    "title": "Qual é o principal componente do Sol?",
+    "options": ["Hidrogênio", "Oxigênio", "Carbono", "Nitrogênio"],
+    "correctAnswer": "Hidrogênio"
+  },
+  {
+    "id": 14,
+    "title": "Qual é a capital da Alemanha?",
+    "options": ["Berlim", "Hamburgo", "Munique", "Frankfurt"],
+    "correctAnswer": "Berlim"
+  },
+  {
+    "id": 15,
+    "title": "Quantos lados tem um hexágono?",
+    "options": ["5", "6", "7", "8"],
+    "correctAnswer": "6"
+  },
+  {
+    "id": 16,
+    "title": "Qual é o rio mais longo do mundo?",
+    "options": ["Nilo", "Amazonas", "Mississipi", "Yangtzé"],
+    "correctAnswer": "Amazonas"
+  },
+  {
+    "id": 17,
+    "title": "Quem descobriu o Brasil em 1500?",
+    "options": [
+      "Pedro Álvares Cabral",
+      "Cristóvão Colombo",
+      "Vasco da Gama",
+      "Fernão de Magalhães"
+    ],
+    "correctAnswer": "Pedro Álvares Cabral"
+  },
+  {
+    "id": 18,
+    "title": "Qual é o maior país do mundo em território?",
+    "options": ["China", "Estados Unidos", "Rússia", "Canadá"],
+    "correctAnswer": "Rússia"
+  },
+  {
+    "id": 19,
+    "title": "Qual é o processo pelo qual as plantas produzem alimento?",
+    "options": ["Respiração", "Fotossíntese", "Digestão", "Fermentação"],
+    "correctAnswer": "Fotossíntese"
+  },
+  {
+    "id": 20,
+    "title": "Qual é a capital do Canadá?",
+    "options": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+    "correctAnswer": "Ottawa"
+  },
+  {
+    "id": 21,
+    "title": "Qual é o animal terrestre mais rápido?",
+    "options": ["Leopardo", "Guepardo", "Leão", "Tigre"],
+    "correctAnswer": "Guepardo"
+  },
+  {
+    "id": 22,
+    "title": "Qual é o principal idioma falado no Brasil?",
+    "options": ["Espanhol", "Inglês", "Português", "Francês"],
+    "correctAnswer": "Português"
+  },
+  {
+    "id": 23,
+    "title": "Quantos planetas existem no sistema solar?",
+    "options": ["7", "8", "9", "10"],
+    "correctAnswer": "8"
+  },
+  {
+    "id": 24,
+    "title": "Qual é o metal mais condutor de eletricidade?",
+    "options": ["Ferro", "Cobre", "Prata", "Alumínio"],
+    "correctAnswer": "Prata"
+  },
+  {
+    "id": 25,
+    "title": "Quem desenvolveu a teoria da relatividade?",
+    "options": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Nikola Tesla",
+      "Galileu Galilei"
+    ],
+    "correctAnswer": "Albert Einstein"
+  },
+  {
+    "id": 26,
+    "title": "Qual é o maior deserto do mundo?",
+    "options": ["Saara", "Gobi", "Antártida", "Kalahari"],
+    "correctAnswer": "Antártida"
+  },
+  {
+    "id": 27,
+    "title": "Qual é a capital da Argentina?",
+    "options": ["Buenos Aires", "Santiago", "Lima", "Montevidéu"],
+    "correctAnswer": "Buenos Aires"
+  },
+  {
+    "id": 28,
+    "title": "Qual é o órgão responsável por bombear o sangue no corpo humano?",
+    "options": ["Pulmão", "Cérebro", "Coração", "Fígado"],
+    "correctAnswer": "Coração"
+  },
+  {
+    "id": 29,
+    "title": "Qual é o país conhecido como Terra do Sol Nascente?",
+    "options": ["China", "Coreia do Sul", "Japão", "Tailândia"],
+    "correctAnswer": "Japão"
+  },
+  {
+    "id": 30,
+    "title": "Qual é o maior osso do corpo humano?",
+    "options": ["Fêmur", "Tíbia", "Úmero", "Rádio"],
+    "correctAnswer": "Fêmur"
+  },
+  {
+    "id": 31,
+    "title": "Qual é a capital da Rússia?",
+    "options": ["Moscou", "São Petersburgo", "Kiev", "Novosibirsk"],
+    "correctAnswer": "Moscou"
+  },
+  {
+    "id": 32,
+    "title": "Qual é o planeta mais próximo do Sol?",
+    "options": ["Vênus", "Mercúrio", "Terra", "Marte"],
+    "correctAnswer": "Mercúrio"
+  },
+  {
+    "id": 33,
+    "title": "Quem foi o cientista que formulou a lei da gravidade?",
+    "options": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Galileu Galilei",
+      "Stephen Hawking"
+    ],
+    "correctAnswer": "Isaac Newton"
+  },
+  {
+    "id": 34,
+    "title": "Qual é o maior país da América do Sul?",
+    "options": ["Argentina", "Brasil", "Chile", "Peru"],
+    "correctAnswer": "Brasil"
+  },
+  {
+    "id": 35,
+    "title": "Qual é a capital do Reino Unido?",
+    "options": ["Londres", "Manchester", "Liverpool", "Birmingham"],
+    "correctAnswer": "Londres"
+  },
+  {
+    "id": 36,
+    "title": "Qual é o processo de transformação da água em vapor?",
+    "options": ["Condensação", "Evaporação", "Fusão", "Solidificação"],
+    "correctAnswer": "Evaporação"
+  },
+  {
+    "id": 37,
+    "title": "Qual é o país mais populoso do mundo?",
+    "options": ["Índia", "China", "Estados Unidos", "Indonésia"],
+    "correctAnswer": "Índia"
+  },
+  {
+    "id": 38,
+    "title": "Qual é a capital da Austrália?",
+    "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+    "correctAnswer": "Canberra"
+  },
+  {
+    "id": 39,
+    "title": "Qual é o elemento químico essencial para a respiração humana?",
+    "options": ["Nitrogênio", "Oxigênio", "Hidrogênio", "Carbono"],
+    "correctAnswer": "Oxigênio"
+  }
+]
